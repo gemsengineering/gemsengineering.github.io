@@ -1,2 +1,2 @@
-# smartassbuiy.github.io
-A smart buoy. What else?
+# GEMS
+A smart buoy.

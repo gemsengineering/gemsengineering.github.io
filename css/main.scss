@@ -2,21 +2,31 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
+$navy-blue: #263238;
+
 body{
   font-family: 'Titillium Web', sans-serif;
 }
 
 h1,h2{
   font-weight: bold;
+	color: $navy-blue;
 }
 
 .jumbotron{
   margin-bottom: 0px;
+color: $navy-blue;
 }
 
 .container-fluid{
   padding-left: 0px !important;
   padding-right: 0px !important;
+}
+
+.navbar-default{
+	background-color: $navy-blue;
+	color: white;
+	border:none;
 }
 
 // SVG Content

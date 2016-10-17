@@ -29,6 +29,11 @@ color: $navy-blue;
 	border:none;
 }
 
+.navbar-default .navbar-nav>.active>a:hover {
+	color: $navy-blue;
+	background-color: white;
+}
+
 // SVG Content
 
 .svg-container {

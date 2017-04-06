@@ -50,80 +50,71 @@
     <div class="container-fluid">
         <div class="jumbotron"><br>
 <div class="row">
-	<div class="col-lg-2">
+	<div class="col-lg-1">
 		<img class="img-responsive" src="/images/gems_logo.png">
 	</div>
 	<div class="col-lg-10">
-		<h2>Geological<br>Environmental<br>Management<br>System</h2>
+		<h2>Geological Environmental Management System</h2>
 	</div>
 </div>
 </div>
 
 <div class="container">
-<h2>Demo dashboard</h2>
+<h2>Data dashboard</h2>
 
-<div class="alert alert-danger" role="alert">
+<div class="alert alert-warning" role="alert">
 	<h3><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
 System status</h3>
-	<p>At least one parameter above normal range.</p>
+	<p>Server is live. System is going to sleep for the night. Check back tomorrow.</p><br>
+	<a class="btn btn-warning" target="_blank" href="https://thingspeak.com/channels/254077/feed.csv">Download CSV data</a> <a class="btn btn-warning" target="_blank" href="https://thingspeak.com/channels/254077/feed.xml">Download XML data</a> <a class="btn btn-warning" target="_blank" href="https://thingspeak.com/channels/254077/feed.json">Download JSON data</a>
 </div>
 
-<div class="col-lg-4">
+
+<div class="col-lg-6">
 	<div class="thumbnail">
 		<h3>Temperature</h3>
-		<table class="table table-striped">
-			<tr><th>Timestamp</th><th>Value</th></tr>
-			<tr>
-				<td>N/A</td>
-				<td>0.00</td>
-			</tr>
-			<tr>
-				<td>N/A</td>
-				<td style="color:red">999.99</td>
-			</tr>
-		</table>
+		<iframe width="450px" height="250" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/254077/charts/1?dynamic=true&title=&xaxis=Time&yaxis=&deg;C&type=spline&"></iframe>
 	</div>
 </div>
 
-<div class="col-lg-4">
+<div class="col-lg-6">
+	<div class="thumbnail">
+		<h3>Turbidity</h3>
+		<iframe width="450px" height="250" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/254077/charts/2?dynamic=true&title=&xaxis=Time&yaxis=mV&type=spline&"></iframe>
+	</div>
+</div>
+
+<div class="col-lg-6">
 	<div class="thumbnail">
 		<h3>Conductivity</h3>
-		<table class="table table-striped">
-			<tr><th>Timestamp</th><th>Value</th></tr>
-			<tr>
-				<td>N/A</td>
-				<td>0.00</td>
-			</tr>
-			<tr>
-				<td>N/A</td>
-				<td style="color:green">7.34</td>
-			</tr>
-		</table>
+		<iframe width="450px" height="250" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/254077/charts/3?dynamic=true&title=&xaxis=Time&yaxis=&mu;S&"></iframe>
 	</div>
 </div>
 
-<div class="col-lg-4">
+<div class="col-lg-6">
 	<div class="thumbnail">
-		<h3>Salinity</h3>
-		<table class="table table-striped">
-			<tr><th>Timestamp</th><th>Value</th></tr>
-			<tr>
-				<td>N/A</td>
-				<td>0.00</td>
-			</tr>
-			<tr>
-				<td>N/A</td>
-				<td style="color:green">10.00</td>
-			</tr>
-		</table>
+		<h3>Depth</h3>
+		<iframe width="450px" height="250" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/254077/charts/4?dynamic=true&title=&xaxis=Time&yaxis=cm&"></iframe>
+	</div>
+</div>
+
+<div class="col-lg-6">
+	<div class="thumbnail">
+		<h3>System Temperature</h3>
+		<iframe width="450px" height="250" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/254077/charts/5?dynamic=true&title=&xaxis=Time&yaxis=&deg;C&type=spline&"></iframe>
+	</div>
+</div>
+
+<div class="col-lg-6">
+	<div class="thumbnail">
+		<h3>Battery Voltage</h3>
+		<iframe width="450px" height="250" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/254077/charts/7?dynamic=true&title=&xaxis=Time&yaxis=mV&"></iframe>
 	</div>
 </div>
 
 
-
-
-
 </div>
+
     </div>
 
     <footer class="site-footer">

@@ -9,7 +9,7 @@
   <title>GEMS Engineering</title>
   <meta name="description" content="A smarter, modular buoy for bathymetry and water composition.">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="http://gemsengineering.github.io/">
   <link rel="alternate" type="application/rss+xml" title="GEMS Engineering" href="http://gemsengineering.github.io/feed.xml">
@@ -37,9 +37,10 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
+            <li><a href="/about">About <span class="sr-only">(current)</span></a></li>
             <li><a href="/team">Team <span class="sr-only">(current)</span></a></li>
             <li><a href="/contact">Contact <span class="sr-only">(current)</span></a></li>
-	    <li class="active"><a href="/demo">Live<span class="sr-only">(current)</span></a></li>
+	          <li class="live"><a href="/demo">Live<span class="sr-only">(current)</span></a></li>
           </ul>
 
         </div><!-- /.navbar-collapse -->
@@ -54,19 +55,40 @@
 		<img class="img-responsive" src="/images/gems_logo.png">
 	</div>
 	<div class="col-lg-2">
-		<h2>Geological<br>Environmental<br>Management<br>System</h2>
+		<h2>Geological<br>Environmental<br>Monitoring<br>System</h2>
 	</div>
 	<div class="col-lg-8">
 		<h1 style="text-align:right">A smart buoy.</h1>
 	</div>
 </div>
 </div>
+<div class='container' style="text-align:center;color:white;">
+  <a href="#intro"><span class='pulse-button glyphicon glyphicon-chevron-down'></span></a>
+</div>
 
 <img class="img-responsive" alt="cover" src="/images/lake.jpg">
 
-<div class="container">
-	<h3>GEMS is a portable system that will assist the user in geological and environmental monitoring to ensure safe work practices and that government regulations and standards are adhered to in order to prevent negative impacts from construction activities.</h3>
+<div class="container" id="intro">
+	<h3>GEMS is a portable system that will assist the user in geological and environmental monitoring to ensure safe work practices and that government regulations and standards are adhered to in order to prevent negative impacts from construction activities.</h3><br>
+	<a class="btn btn-primary" href="/about"><h4>Learn more <span class="glyphicon glyphicon-arrow-right"></span></h4></a>
+	<br><br>
 </div>
+
+<script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1000, function(){
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
 
     </div>
 
